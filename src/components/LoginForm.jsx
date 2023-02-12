@@ -11,13 +11,14 @@ function LoginForm() {
         const setStateAction = {
             email: setEmail,
            
+            
         }
-        setStateAction && setStateAction(value);
+        setStateAction && setStateAction(value)
     };
 
     
     return(
-        <View activePanel="user">
+        <View activePanel="login-form">
             <Panel id="login-form">
                 <Group>
                     <FormLayout>
