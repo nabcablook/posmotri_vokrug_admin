@@ -1,0 +1,11 @@
+.vkuiGroup--sizeX-none.vkuiGroup--padding-m > .vkuiGroup__inner {
+    /*margin-top: 400px;*/
+    width: 20%;
+    
+
+}
+
+.vkuiSplitLayout {
+    /*background-image: url('../images/test-image.png');*/
+    background-size: cover;
+}

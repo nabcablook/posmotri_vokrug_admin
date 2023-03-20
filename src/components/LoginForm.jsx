@@ -7,13 +7,8 @@ function LoginForm() {
     
 
     const onChange = (e) => {
-        const value = e.currentTarget;
-        const setStateAction = {
-            email: setEmail,
-           
-            
-        }
-        setStateAction && setStateAction(value)
+        const { value } = e.currentTarget;
+        setEmail(value)
     };
 
     
@@ -25,9 +20,6 @@ function LoginForm() {
                         <FormItem
                         top="Email"
                         status={email ? 'valid' : 'error'}
-                        bottom={
-                            email ? '' : 'Пожалуйста введите электронную почту'
-                        }
                         >
                             <Input type="email" name="email" value={email} onChange={onChange} />
                         </FormItem>
@@ -35,7 +27,7 @@ function LoginForm() {
                             <Input type="password" placeholder="Введите пароль" />
                         </FormItem>
                         <FormItem>
-                            <Button size="m">
+                            <Button size="m" disabled={!email}>
                                 Войти
                             </Button>
                         </FormItem>

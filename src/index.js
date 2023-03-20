@@ -11,13 +11,12 @@ import Login from './screens/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- /* <ConfigProvider>
+  <ConfigProvider>
     <AdaptivityProvider>
       <App />
     </AdaptivityProvider>
-  </ConfigProvider>,*/
-  <Login />,
-  document.getElementById('root'),
+  </ConfigProvider>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
